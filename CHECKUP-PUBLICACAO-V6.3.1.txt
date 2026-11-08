@@ -1,0 +1,25 @@
+RAVENA PESCARIA RPG — CHECK-UP DE PUBLICAÇÃO V6.3.1
+Data: 05/11/2026
+
+VALIDADO (checagem estática)
+- index.html presente; caminhos CSS e JS relativos e existentes.
+- Quatro scripts JavaScript passaram no node --check.
+- Pacote GitHub Pages inclui a pasta pesca-rpg/ completa.
+- Módulos de pesca, skins, perfil, inventário e colisão estão presentes no código.
+- Estátua sem asas mantida no código da versão atual.
+
+NÃO VALIDADO NESTE AMBIENTE
+- Navegação e aparência no navegador Android: tentativa de teste automatizado bloqueada.
+- Fluxos de compra, salvamento e pesca em execução real.
+- Acessibilidade de todas as passagens e colisões em todas as posições.
+- Câmera isométrica e vila da arte conceitual: ainda NÃO implementadas integralmente.
+
+PUBLICAÇÃO
+1. Descompacte este ZIP.
+2. No repositório GitHub Pages, substitua o conteúdo da pasta pesca-rpg/ pelos arquivos da pasta pesca-rpg/ do ZIP.
+3. Preserve a estrutura index.html, css/ e js/.
+4. Aguarde a publicação do GitHub Pages.
+5. Abra /pesca-rpg/ e atualize a página.
+6. Confira: inicialização, joystick, colisão com lago/árvores, píer, pesca, perfil/renomeação, inventário, skins e mercado.
+
+ATENÇÃO: o progresso é salvo no navegador. Evite limpar dados do site. Faça cópia do repositório antes de substituir os arquivos.
