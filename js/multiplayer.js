@@ -9,7 +9,7 @@
   function setStatus(next) { status = next; emit(); }
   function disconnect() { clearTimeout(reconnect); reconnect = null; if (socket) { socket.onclose = null; socket.close(); socket = null; } peers.clear(); setStatus('offline'); }
   function connect() {
-    if (!config.wsUrl || !/^wss:\/\//.test(config.wsUrl) || !sessionStorage.getItem('ravenaSessionV1')) return setStatus('offline');
+    if (!config.wsUrl || !/^(wss|ws):\/\//.test(config.wsUrl) || !sessionStorage.getItem('ravenaSessionV1')) return setStatus('offline');
     if (socket && (socket.readyState === WebSocket.CONNECTING || socket.readyState === WebSocket.OPEN)) return;
     setStatus('connecting');
     try {
